@@ -4,7 +4,27 @@
     "href": "index.html",
     "title": "Regression Monkey Mathcamp in Julia",
     "section": "",
-    "text": "Code\n1 + 1\n\n\n2",
+    "text": "Preface",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>xxx</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#実行環境",
+    "href": "index.html#実行環境",
+    "title": "Regression Monkey Mathcamp in Julia",
+    "section": "0.1 💻 実行環境",
+    "text": "0.1 💻 実行環境\n\n\n\n\n項目\nversion\n\n\n\n\nOS\nUbuntu 24.04.3 LTS x86_64\n\n\nCPU\nAMD Ryzen 9 7950X (32) @ 5.883GHz\n\n\nGPU\nNVIDIA GeForce RTX 4070\n\n\nJulia\n1.12.7\n\n\ngcc\n13.3.0\n\n\ncuda\n13.0\n\n\nNVIDIA-Driver\n580.65.06",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>xxx</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#contributions",
+    "href": "index.html#contributions",
+    "title": "Regression Monkey Mathcamp in Julia",
+    "section": "0.2 🧩 Contributions",
+    "text": "0.2 🧩 Contributions\n\nノートに関してBUG/Typos/不正確な表記を見つけた場合，まずGitHub IssuesでIssue Raiseしていただけると助かります\n右サイドバーの Report an issue をクリックすることで，Issue作成画面に遷移することができます\n修正の必要性の判断はRyoNakが最終的には判断しますが，広く議論できたら幸いです",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>xxx</span>"
     ]
