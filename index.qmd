@@ -1,13 +1,32 @@
 ---
-title: xxx
 engine: julia
-date: "2025-08-26"
-date-modified: "2025-08-28"
+date: "2026-02-10"
+date-modified: "2026-02-10"
 ---
 
 {{< shield_badge "./include/badges/quarto_version.json" >}}
 {{< shield_badge "./include/badges/julia_version.json" >}}
 
-```{julia}
-1 + 1
-```
+# Preface {.unnumbered}
+
+## 💻 実行環境
+
+:::: {.no-border-top-table}
+
+| 項目           | version                          |
+|---------------|-----------------------------------|
+| OS            | Ubuntu 24.04.3 LTS x86_64         |
+| CPU           | AMD Ryzen 9 7950X (32) @ 5.883GHz |
+| GPU           | NVIDIA GeForce RTX 4070           |
+| Julia         | 1.12.4                            |
+| gcc           | 13.3.0                            |
+| cuda          | 13.0                              |
+| NVIDIA-Driver | 580.65.06                         |
+
+::::
+
+## 🧩 Contributions
+
+- ノートに関してBUG/Typos/不正確な表記を見つけた場合，まず[GitHub Issues](https://github.com/RyoNakagami/regression-monkey-julia-mathcamp/issues/new)でIssue Raiseしていただけると助かります
+- 右サイドバーの [Report an issue](https://github.com/RyoNakagami/regression-monkey-julia-mathcamp/issues/new) をクリックすることで，Issue作成画面に遷移することができます
+- 修正の必要性の判断は[RyoNak](https://github.com/RyoNakagami)が最終的には判断しますが，広く議論できたら幸いです
