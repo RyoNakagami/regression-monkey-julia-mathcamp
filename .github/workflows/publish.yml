@@ -1,35 +1,35 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches: [main]
 
-name: Publish regmonkey-mathcamp-in-julia Site
+# name: Publish regmonkey-mathcamp-in-julia Site
 
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   build-deploy:
+#     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
+#     permissions:
+#       contents: write
 
-    env:
-      JULIA_NUM_THREADS: auto   # 🔥 Julia render高速化
+#     env:
+#       JULIA_NUM_THREADS: auto   # 🔥 Julia render高速化
 
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Check out repository
+#         uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+#       - name: Set up Quarto
+#         uses: quarto-dev/quarto-actions/setup@v2
 
-      # Julia
-      - uses: julia-actions/setup-julia@v2
+#       # Julia
+#       - uses: julia-actions/setup-julia@v2
 
-      # set up Julia environment
-      - name: Instantiate Julia environment
-        run: julia --project=@. --startup-file=no -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
+#       # set up Julia environment
+#       - name: Instantiate Julia environment
+#         run: julia --project=@. --startup-file=no -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
+#       - name: Render and Publish
+#         uses: quarto-dev/quarto-actions/publish@v2
+#         with:
+#           target: gh-pages

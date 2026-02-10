@@ -1,5 +1,7 @@
 
 
+
+
 ## Juliaの初期設定
 
 ```bash
@@ -34,7 +36,7 @@ PRE_COMMIT_ALLOW_NO_CONFIG=1 quarto publish gh-pages
 **&#9654;&nbsp; スクリプトversion**
 
 ```bash
-bash publish_quarto_book.sh
+bash publish-quarto-book.sh
 ```
 
 ## References

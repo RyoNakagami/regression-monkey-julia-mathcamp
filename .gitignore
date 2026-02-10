@@ -55,6 +55,7 @@ share/python-wheels/
 .ipynb_checkpoints/
 _site/
 /.quarto/
+_book/
 
 # ---- IDE / editor ----
 .idea/
