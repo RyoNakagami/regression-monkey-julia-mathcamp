@@ -1,0 +1,77 @@
+# ------------------------------------------------
+# Author: Ryo Nakagami
+# Revised: 2026-02-10
+# File: julia analysis .gitignore
+# Description:
+#   Minimal .gitignore for Julia projects.
+#   Ignores:
+#     - Temporary files
+#     - Log files
+#     - Environment configs
+#     - Julia compiled cache
+#     - Julia version manager files
+#     - Build artifacts
+#     - IDE/editor metadata
+# ------------------------------------------------
+
+# ---- OS / temporary files ----
+.DS_Store
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+
+# ---- Logs ----
+logs/
+*.log
+*.out
+*.trace
+
+# ---- Local Julia environments (rarely used) ----
+.env
+env/
+ENV/
+*.gpg
+.julia/
+.julia_dev/
+
+# ---- Julia compiled cache (local) ----
+compiled/
+*.ji
+
+# ---- Julia version managers ----
+juliaup.json
+.julia-version
+
+# ---- Build / packaging ----
+build/
+dist/
+wheels/
+share/python-wheels/
+
+
+# ---- Notebooks + Quarto ----
+.ipynb_checkpoints/
+_site/
+/.quarto/
+
+# ---- IDE / editor ----
+.idea/
+*.iml
+
+# ---- Temporary scripts for execution tests ----
+*.test.sh
+
+# ---- Sandbox / temporary directories ----
+tmp/
+sandbox/
+
+# ---- Optional repo-cleaner artifacts ----
+..bfg-report
+bfg_check_list/
+
+# ---- Lua / Quarto ----
+/.luarc.json
+
+**/*.quarto_ipynb

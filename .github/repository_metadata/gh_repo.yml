@@ -1,0 +1,12 @@
+meta-data:
+  repository_name: regression-monkey-julia-mathcamp
+  visibility: private
+  org-name: RyoNakagami
+  tag:
+    - blog
+    - Julia
+    - mathcamp
+  description: |
+    Code repository for "Regression Monkey MathCamp in Julia" blog post
+  homepage: null
+  license: mit

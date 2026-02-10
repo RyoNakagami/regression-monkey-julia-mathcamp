@@ -1,0 +1,13 @@
+---
+title: xxx
+engine: julia
+date: "2025-08-26"
+date-modified: "2025-08-28"
+---
+
+{{< shield_badge "./include/badges/quarto_version.json" >}}
+{{< shield_badge "./include/badges/julia_version.json" >}}
+
+```{julia}
+1 + 1
+```

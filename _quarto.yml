@@ -1,0 +1,95 @@
+project:
+  type: book
+  output-dir: _book
+  preview:
+    port: 4211 #change here
+
+extensions:
+  - reveal-vspace
+  - _extensions/shield_badge
+
+filters:
+  - pseudocode
+
+book:
+  title: "Regression Monkey Mathcamp in Julia" #change here
+  repo-url: https://github.com/RyoNakagami/regression-monkey-mathcamp-in-julia
+  site-url: https://ryonakagami.github.io/regression-monkey-mathcamp-in-julia/
+  google-analytics:
+    tracking-id: "G-QEFX7FVCDM" #change here
+  favicon: include/pictures/favicon.ico
+  sharing: twitter
+
+  sidebar:
+      tools:
+       - text: Blog Series
+         icon: book
+         menu:
+         - text: Ryo's Datascience Blog
+           href: https://ryonakagami.github.io/regmonkey-datascience-blog/
+           aria-label: blog-general
+         - text: cmdstanpy for regmonkey
+           href: https://ryonakagami.github.io/cmdstan_for_regression_monkey/
+           aria-label: regmonkey_cmd
+         - text: Statistics for regmonkey
+           href: https://ryonakagami.github.io/statistics-for-regression-monkey/
+           aria-label: regmonkey_dojo
+         - text: OhGoshGit!?!
+           href: https://ohgoshgit.github.io/
+           aria-label: blog-ogg
+  repo-actions: [edit, issue]
+  page-footer:
+    center:
+      - text: "© Copyright RyoNak"
+      - text: "LICENSE"
+        href: LICENSE
+
+  chapters:
+    - index.qmd
+    - references.qmd
+
+
+bibliography: references.bib
+
+format:
+  html:
+    include-in-header:
+      - include/font/fontsetup.html
+      - include/math/mathjax.html
+      - include/google_setup/googletagmanager_in_header.html
+    include-before-body:
+      - include/google_setup/googletagmanager_in_body.html
+    lang: us_EN.UTF-8
+    number-depth: 2
+    number-sections: true
+    highlight-style: github
+    theme:
+      light:
+        - cosmo
+        - include/scss/style.scss
+        - include/scss/light.scss
+      dark:
+        - darkly
+        - include/scss/style.scss
+        - include/scss/dark.scss
+    fontsize: 18px
+    code-copy: true
+    code-fold: true
+    code-overflow: wrap
+    date-format: "iso"
+    bibliography: references.bib
+    biblatexoptions: bibstyle=jauthoryear,citestyle=numeric,natbib=true
+    csl: reference.csl
+    mainfont: "Noto Sans JP"
+    monofont: monospace
+    page-layout: article
+    grid:
+      sidebar-width: 300px
+      body-width: 1000px
+      margin-width: 200px
+    mermaid:
+      theme: neutral
+    pseudocode:
+      caption-prefix: "Algorithm"      # Prefix for captions (default: "Algorithm")
+      reference-prefix: "Algorithm"   # Prefix for references (default: "Algorithm")
+      caption-number: true
